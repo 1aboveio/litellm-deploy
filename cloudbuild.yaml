@@ -43,6 +43,7 @@ steps:
       - --min-instances=0
       - --max-instances=10
       - --add-cloudsql-instances=cosmic-heaven-479306-v5:us-central1:ai-dev
+      - --service-account=litellm-proxy@cosmic-heaven-479306-v5.iam.gserviceaccount.com
       - --set-secrets=LITELLM_MASTER_KEY=litellm-master-key:latest,DATABASE_URL=litellm-database-url:latest,LITELLM_SALT_KEY=litellm-salt-key:latest,/secrets/litellm-config/config.yaml=litellm-config:latest
 
 images:
